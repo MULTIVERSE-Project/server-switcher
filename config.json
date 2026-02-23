@@ -1,0 +1,28 @@
+{
+  "gmod_addons_path": "D:/_Dev/Gmod/_server/garrysmod/addons",
+
+  "start_exe": "D:/_Dev/Gmod/_server/srcds.exe",
+  "start_args": [
+    "-console",
+    "-game garrysmod",
+    "+map gm_flatgrass",
+    "+maxplayers 20",
+    "+port 27015"
+  ],
+
+  "servers": {
+    "SWRP Catalyst": {
+      "addons": "D:/_Dev/Gmod/_server_addons/_catalyst",
+      "start_args": [
+        "+gamemode starwarsrp",
+        "+host_workshop_collection 3368186821"
+      ]
+    },
+    "StarWars": {
+      "addons": "D:/GModAddons/starwars"
+    },
+    "Other": {
+      "addons": "D:/GModAddons/other"
+    }
+  }
+}
