@@ -3,6 +3,8 @@ name: Build & Release ServerSwitcher
 on:
   release:
     types: [created]
+    
+  workflow_dispatch:
 
 jobs:
   build-and-upload:
