@@ -27,7 +27,7 @@ jobs:
 
       - name: Build ServerSwitcher
         run: |
-          pyinstaller --onefile --clean --icon=icon.ico --name=ServerSwitcher switcher.py
+          pyinstaller --onefile --clean --icon=icon.ico --uac-admin --name=ServerSwitcher switcher.py
 
       - name: Prepare release archive
         run: |

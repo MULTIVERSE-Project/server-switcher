@@ -6,7 +6,7 @@
     {
       "label": "Build",
       "type": "shell",
-      "command": "python -m PyInstaller --onefile --icon=icon.ico --name ServerSwitcher switcher.py",
+      "command": "python -m PyInstaller --onefile --icon=icon.ico --uac-admin --name=ServerSwitcher switcher.py",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -22,7 +22,7 @@
     {
       "label": "Build (clean)",
       "type": "shell",
-      "command": "python -m PyInstaller --clean --onefile --icon=icon.ico --name ServerSwitcher switcher.py",
+      "command": "python -m PyInstaller --clean --onefile --icon=icon.ico --uac-admin --name=ServerSwitcher switcher.py",
       "group": {
         "kind": "build",
         "isDefault": true
