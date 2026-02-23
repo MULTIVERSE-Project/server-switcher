@@ -111,8 +111,17 @@ def resolve_start_command(config, server):
     server_args = server.get("start_args", [])
 
     args = [*global_args, *server_args]
+    parsed_args = []
 
-    return exe, args
+    parsed_args = []
+    
+    for arg in args:
+        if ' ' in arg:
+            parsed_args.extend(arg.split(maxsplit=1))
+        else:
+            parsed_args.append(arg)
+
+    return exe, parsed_args
 
 
 def start_server(config, server):
